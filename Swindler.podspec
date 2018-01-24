@@ -32,11 +32,12 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Sources/**/*.{h,swift}'
   s.exclude_files = 'Sources/API.swift'
-  s.public_header_files = 'Sources/ASLLog/ASLLog.h'
+  #s.public_header_files = 'Sources/ASLLog/ASLLog.h'
+  s.public_header_files = 'Sources/*.h'  
 
-  s.pod_target_xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Swindler/Sources/ASLLog/**',
-                           'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Swindler/Sources/ASLLog'}
-  s.preserve_paths = 'Sources/ASLLog/module.modulemap'
+  #s.pod_target_xcconfig = {'SWIFT_INCLUDE_PATHS' => '$(SRCROOT)/Swindler/Sources/ASLLog/**',
+  #                         'LIBRARY_SEARCH_PATHS' => '$(SRCROOT)/Swindler/Sources/ASLLog'}
+  #s.preserve_paths = 'Sources/ASLLog/module.modulemap'
 
   s.dependency 'PromiseKit', '4.4.0'
   s.dependency 'AXSwift', '0.2.0'
