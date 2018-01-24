@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => 'https://github.com/tmandry/Swindler.git', :commit => 'c2b871e1d4f47b82b87510fed6ca320f97e3f2d0' }# :tag => s.version.to_s }
 
-  s.source_files = 'Sources', 'Sources/**/*.{h,swift}'
+  s.source_files = 'Sources/**/*.{h,swift}'
   s.exclude_files = 'Sources/API.swift'
   s.public_header_files = 'Sources/ASLLog/ASLLog.h'
 
